@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>DOM</title>
+    </head>
+
+    <body>
+        <h3>Click: <span id="click">0</span></h3>
+        <button type="button" onclick="add()">Click here to add +1</button>
+
+        <script>
+            let click = 0;
+            function add()
+            {
+                click++;
+                document.getElementById("click").innerText = click
+            };
+        </script>
+    </body>
+
+</html>
+<!--################### Do not copy the text between the boxes####################-->
+<!--It's just a comment within a comment-->
+ <!--
+        <div id="first-div">
+            <h1>Programming Languages</h1>
+            <ul>
+                <li class="p-languages">JavaScript</li>
+                <li class="p-languages">KotLin</li>
+                <li class="p-languages">Swift</li>
+                
+                <li id="first-li">JavaScript</li>
+                <li id="second-li">KotLin</li>
+                <li id="last-li">Swift</li>
+                
+            </ul>
+        </div>
+
+        ###InnerText###
+        <script>
+            let android = document.querySelector("#second-li")
+            android.innerText = "java"
+        </script>
+
+        ###style###
+        <script>
+            let android = document.querySelector("#second-li")
+            android.style.background = "red"
+            android.style.textAlign = "center"
+        </script>
+-->
+<!--
+        <script>
+            let list = document.getElementsByTagName('li')
+            console.log(list[1])
+            /*
+            let languages = document.getElementsByClassName('p-languages')
+            console.log(languages[0])
+            */
+        </script>
+-->
+<!--
+       <div>
+            <h1>Programming Languages</h1>
+            <p>Thes are some Programming Languages</p>
+            <ul class="languages">
+                <li>JavaScript</li>
+                <p>We can create interactive Website using JavaScript</p>
+                <li>KotLin</li>
+                <p>we can develop Android apps using JavaScript</p>
+                <li>Swift</li>
+                <p>we can develop iOS apps using Swift</p>
+            </ul>
+       </div>
+       <script>
+            let text = document.querySelectorAll('.languages p')
+            console.log(text)
+       </script>
+-->
+<!--
+    ###CreateElement###
+    <div id="first-div">
+            <h1>Programming Languages</h1>
+            <ul class="list">
+                <li >JavaScript</li>
+                <li>KotLin</li>
+                <li>Swift</li>
+                
+            </ul>
+        </div>
+        ###Add Element###
+        <script>
+            let languageslist = document.querySelector(".list")
+            let ruby = document.createElement("li")
+            ruby.innerText = "Ruby"
+            languageslist.append(ruby)
+            console.log(languageslist)
+        </script>
+        ###Remove Element###
+         <script>
+            let languageslist = document.querySelector(".list")
+            let ios = document.querySelector("li")[1]
+            ios.remove()//Methos Remove is not unavailable
+            console.log(languageslist)
+        </script>
+-->
